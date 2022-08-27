@@ -1,0 +1,8 @@
+mov A 0001
+add A 0001
+add A 0100
+add B 0100
+add A 0100
+mov A B
+out B
+jmp 0111

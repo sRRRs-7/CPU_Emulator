@@ -121,7 +121,6 @@ impl Parser {
 
             self.index += 1;
         }
-
         Ok(results)
     }
 

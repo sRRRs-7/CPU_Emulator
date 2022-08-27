@@ -88,6 +88,10 @@ impl CPUemulator {
                 self.register.inc_pc();
             }
 
+            println!("{}", self.register.pc());
+            println!("{}", self.halt());
+            println!("{}", self.rom.size());
+
             if self.halt() {
                 return Ok(());
             }
@@ -95,7 +99,7 @@ impl CPUemulator {
     }
 
     fn halt(&self)-> bool {
-        self.rom.size() <= self.register.pc() + 1
+        self.rom.size() <= self.register.pc()
     }
 
     fn add_a(&mut self, immediate: u8) {

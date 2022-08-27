@@ -1,6 +1,9 @@
 
-start:
-	cargo run calc.sasm
+start1:
+	cargo run instruction1.sasm
+
+start2:
+	cargo run instruction2.sasm
 
 
-.PHONY: start
+.PHONY: start1, start2
