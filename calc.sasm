@@ -1,0 +1,5 @@
+mov A 0001
+add A 0001
+mov B A
+out B
+jmp 0000
